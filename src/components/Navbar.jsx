@@ -15,9 +15,9 @@ function readTheme() {
     const saved = localStorage.getItem('theme')
     if (saved === 'light' || saved === 'dark') return saved
   } catch {
-    // storage unavailable; fall back to the system preference
+    // storage unavailable; fall back to the default
   }
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  return 'light'
 }
 
 export default function Navbar() {
