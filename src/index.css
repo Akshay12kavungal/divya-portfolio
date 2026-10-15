@@ -2152,7 +2152,9 @@ a.contact-mini:hover .contact-mini__top > .icon {
   }
   .tile--photo {
     padding: 0;
-    min-height: 280px;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    max-height: 560px;
   }
   .marquee {
     margin: 0 -22px;
